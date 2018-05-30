@@ -1,0 +1,56 @@
+{
+    "paymentMehtod": {
+        "mandatory": true,
+        "value": ["LOCAL", "SWIFT"]
+    },
+    "bankCountryCode": {
+        "mandatory": true,
+        "value": ["US", "AU", "CN"]
+    },
+    "accountName": {
+        "mandatory": true,
+        "length": {
+            "min": 2,
+            "max": 10
+        },
+        "charLimit": false
+    },
+    "accountNumber": {
+        "mandatory": true,
+        "length": {
+            "US": {
+                "min": 7,
+                "max": 11,
+                "charLimit": false
+            },
+            "AU": {
+                "min": 6,
+                "max": 9,
+                "charLimit": false
+            },
+            "CN": {
+                "min": 8,
+                "max": 20,
+                "charLimit": false
+            }
+        }
+
+    },
+    "swiftCode": {
+        "mandatory": true,
+        "length": [8, 11]
+    },
+    "bsb": {
+        "mandatory": "AU",
+        "length": 6
+    },
+    "aba": {
+        "mandatory": "US",
+        "length": 9
+    },
+    "errorMsg": {
+        "accountNumber": "'account_number' is required",
+        "swiftCode": "Length of 'swift_code' should be either 8 or 11"
+    }
+
+}

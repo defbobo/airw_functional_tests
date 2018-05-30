@@ -1,0 +1,16 @@
+{
+  "name": "mocha_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "defbobo",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  }
+}
