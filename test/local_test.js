@@ -190,7 +190,7 @@ describe('payment: LOCAL, country: US', () => {validTestcase(api, config, 'US')}
 
 describe('payment: LOCAL, country: AU', () => {validTestcase(api, config, 'AU')})
 
-describe.skip('payment: LOCAL, country: CN', () => {validTestcase(api, config, 'CN')})
+describe('payment: LOCAL, country: CN', () => {validTestcase(api, config, 'CN')})
 
 describe('invalid accountName cases', () => {invalidAcountNameTestcase(api, config)})
 

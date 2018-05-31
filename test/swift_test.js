@@ -212,7 +212,7 @@ describe('payment: SWIFT, country: US', () => {validTestcase(api, config, 'US')}
 
 describe('payment: SWIFT, country: AU', () => {validTestcase(api, config, 'AU')})
 
-describe.skip('payment: SWIFT, country: CN', () => {validTestcase(api, config, 'CN')})
+describe('payment: SWIFT, country: CN', () => {validTestcase(api, config, 'CN')})
 
 describe('invalid accountName cases', () => {invalidAcountNameTestcase(api, config)})
 
