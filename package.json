@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha -t 10000 --require babel-register"
   },
   "author": "defbobo",
   "license": "ISC",
@@ -12,5 +12,9 @@
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "supertest": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
   }
 }

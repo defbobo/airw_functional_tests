@@ -1,13 +1,13 @@
-function getRandomChar() {
+const getRandomChar = () => {
   var randomInt = Math.round(Math.random() * 93) + 32;
   return String.fromCharCode(randomInt);
 }
 
-function getRandomWord(randomFlag, min, max) {
-  var str = '';
-  var range = min;
-  for (var i = 1; i < range; i++) {
-    var char = getRandomChar();
+export const getRandomWord = (randomFlag, min, max) => {
+  let str = '';
+  const range = min;
+  for (let i = 0; i < range; i++) {
+    let char = getRandomChar();
     if (char != '/') {
       str += char
     } else {
@@ -17,4 +17,7 @@ function getRandomWord(randomFlag, min, max) {
   return str;
 }
 
-module.exports = getRandomWord;
+export const getErrorMsg = (str) => {
+  return JSON.parse(str).error
+}
+
